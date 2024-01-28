@@ -8,8 +8,7 @@ $(NAME): $(SRC)
 	cc -Wall -Wextra -Werror -Iincludes -lft -L./ $(SRC) -o $(NAME)
 
 test: all
-	@cd ./test
-	pytest
+	./test.sh
 
 clean:
 
