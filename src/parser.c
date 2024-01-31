@@ -25,6 +25,7 @@ void	parser(char *file, t_data *data)
 		line = get_next_line(fd);
 	}
 	close(fd);
+	close(fd);
 	fd = open(file, O_RDONLY);
 	data->map = (char **) malloc(sizeof(char *) * data->height);
 	i = 0;
